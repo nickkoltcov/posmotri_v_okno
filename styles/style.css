@@ -133,19 +133,27 @@ ol {
 }
 
 .content__video-card-title {
+  max-width: 200px;
   font-size: 30px;
   text-transform: uppercase;
   line-height: 30px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   margin-bottom: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
+  max-width: 200px;
   font-size: 18px;
   line-height: 16.2px;
   font-weight: 400;
   font-family: "Fira Sans Condensed", sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -217,7 +225,7 @@ ol {
   background-color: transparent;
   cursor: pointer;
   width: 194px;
-  height: 34px;
+  min-height: 34px;
 }
 
 .search-form__submit-button {
@@ -289,9 +297,3 @@ ol {
 .content__card-link_current {
   background-color: #545050;
 }
-
-.block {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-} 
